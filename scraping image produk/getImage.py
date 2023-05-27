@@ -16,46 +16,6 @@ driver = webdriver.Chrome()  # Ganti dengan driver sesuai dengan browser yang An
 # driver.save_screenshot(screenshot_path)
 
 
-# # Temukan semua elemen gambar pada halaman
-# image_elements = driver.find_elements(By.CSS_SELECTOR, 'img')
-
-# # Ambil URL gambar pada daftar gambar pertama
-# image_urls = []
-# for i in range(min(len(image_elements), 5)):  # Ambil maksimal 5 gambar pertama
-#     image_element = image_elements[i]
-#     image_url = image_element.get_attribute('src')
-#     image_urls.append(image_url)
-
-# # Cetak URL gambar
-# for url in image_urls:
-#     print(url)
-
-# # Temukan elemen gambar pertama
-# image_element = driver.find_element(By.CSS_SELECTOR, 'img')
-
-# # Dapatkan URL gambar dari atribut 'src'
-# image_url = image_element.get_attribute('src')
-
-# # Cetak URL gambar pertama
-# print(image_url)
-
-# # Temukan semua elemen gambar pada halaman
-# image_elements = driver.find_elements(By.CSS_SELECTOR, 'img')
-
-# # Ambil gambar ke-5 (indeks ke-4) dari daftar gambar
-# if len(image_elements) > 4:
-#     image_element = image_elements[4]
-#     image_url = image_element.get_attribute('src')
-    
-#     # Lakukan tindakan selanjutnya dengan gambar ke-5
-    
-#     # Cetak URL gambar ke-5
-#     print(image_url)
-# else:
-#     print('Tidak ada gambar ke-5 pada halaman')
-
-
-
 # Buka file CSV untuk menulis data
 loop = 0
 with open('./out.csv', 'a', newline='') as csv_file:
